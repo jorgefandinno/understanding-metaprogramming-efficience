@@ -1,4 +1,7 @@
-time gringo examples/bt_0100.asp > /dev/null            0.495s
+time clingo examples/bt_0100.asp >/dev/null             0.878s
+time clingo examples/bt_0100.facts meta.lp >/dev/null  14.459s
+time gringo examples/bt_0100.asp >/dev/null             0.495s
 python simple_grounding.py                              0.429s
 python meta_programming.py                              4.515s
+python py_apy.py                                        1.323s
 python one_rule.py                                      2.276s
