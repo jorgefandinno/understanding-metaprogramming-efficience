@@ -23,7 +23,7 @@ class ClingoApp(clingo.application.Application):
         with ctl.backend() as backend:
             mapping = Remapping(backend, prg.output_atoms, prg.facts)
             prg.add_to_backend(backend, mapping)
-            ctl.ground()
+        ctl.ground()
         end = time.time()
         total = elapsed = end - start
         print("\nGrounding (facts): {0:.3f} seconds".format(elapsed))
